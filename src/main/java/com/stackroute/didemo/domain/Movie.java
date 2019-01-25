@@ -1,8 +1,13 @@
 package com.stackroute.didemo.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Movie {
     private int id;
     private String title;
+    @Autowired
     private Actor actor;
 
     public Movie() {
